@@ -1,0 +1,226 @@
+body {
+  height: 6000px;
+}
+
+.wraper {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.intothejoongcheon {
+  position: relative;
+  margin-top: 50px;
+  width: 100%;
+  overflow: hidden;
+  text-align: center;
+  
+}
+
+.intothejoongcheon h2{
+  font-size: 70px;
+  font-weight: 800;
+  letter-spacing : -5px
+
+}
+
+
+.login_bar {
+  display: flex;
+  position: fixed;
+  justify-content: center;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 50px;
+  background: #3f4554;
+  border-bottom: 1px solid #1d2127;
+  z-index: 800;
+}
+
+.login_bar .left_item {
+  display: flex;
+  align-items: center;
+}
+
+.login_bar .lb_logo {
+  background-image: url(./img/lognbar_logo.png);
+  width: 140px;
+  height: 49px;
+}
+
+.login_bar a.lb_btn.nx {
+  background-color: #3392ff;
+  border-radius: 0 2px 2px 0;
+  ;
+}
+
+.login_bar a.lb_btn.df {
+  background-color: #565b68;
+  ;
+  border-radius: 2px 0 0 2px;
+  ;
+}
+
+.login_bar a.lb_btn {
+  width: 110px;
+  height: 34px;
+  border-radius: 2px;
+  color: #fff;
+  font-size: 12px;
+  line-height: 34px;
+  text-align: center;
+  text-indent: 0;
+}
+
+.right_item {
+  margin-left: auto;
+  display: flex;
+}
+
+.login_bar .lb_btn_gs {
+  width: 240px;
+  height: 49px;
+  background-image: url(./img/lognbar_gamestart.png);
+}
+
+.login_bar .lb_btn_nav {
+  width: 55px;
+  height: 49px;
+  background-image: url(./img/btn_open_nav.png);
+  cursor: pointer;
+}
+
+.bnrs{
+  position: absolute;
+}
+
+
+.bnrs a {
+  display: block;
+  width: 260px;
+  height: 120px;
+  margin-bottom: 1px;
+}
+
+/* section */
+
+.visual_fix {
+
+}
+
+section .tvfbox_img {
+  width: 100%;
+  height: 1600px;
+  background: url(./img/intro_bg2.jpg) no-repeat;
+  background-position: center;
+}
+
+.cloudb{
+  background: url(./img/intro_cloud_b.png);
+  width: 100%;
+  height: 1600px;
+  position: absolute;
+  top: 0;
+  background-position: center;
+}
+
+section.section1 {
+  background: url(./img/s1_bg.jpg);
+  height: 1680px;
+}
+
+
+section.section1 .txt1{
+  margin-top: 200px;
+  opacity: 0;
+  transform: translate(0,50px);
+  transition: all .7s;
+}
+section.section1 .txt1.on{
+  opacity: 1;
+  transform: translate(0,0);
+}
+
+section .txt2{
+  margin-top: 50px;
+  font-size: 20px;
+  color: #666;
+  opacity: 0;
+  transition: all .7s;
+  transform: translate(0,50px);
+}
+
+section .txt2.on{
+  opacity: 1;
+  transform: translate(0,0px);
+}
+
+section.section1 .txt3{
+  margin-top: 100px;
+  font-size: 60px;
+  opacity: 0;
+  transform: translate(0,50px);
+  transition: all .7s;
+}
+section.section1 .txt3.on{
+  opacity: 1;
+  transform: translate(0,0);
+}
+
+section .txt4{
+  margin-top: 30px;
+  font-size: 20px;
+  color: #666;
+  opacity: 0;
+  transition: all .7s;
+  transform: translate(0,50px);
+}
+
+section .txt4.on{
+  opacity: 1;
+  transform: translate(0,0px);
+}
+
+
+.secimg1 {
+  margin-top: 100px;
+  background: url(img/s1_c1.png) no-repeat;
+  width: 100%;
+  height: 900px;
+  background-position: center;
+  border-radius: 40px;
+  opacity: 0;
+  transition: all .7s;
+  transform: translate(0,50px);
+}
+
+.secimg1.on {
+  opacity: 1;
+  transform: translate(0,0px);
+}
+
+/* 섹션2 */
+
+
+
+section.section2 {
+  position: relative;
+  background: url(./img/s2_bg1.jpg) no-repeat;
+  background-position: center;
+  height: 1680px;
+  margin-top: -300px;
+}
+section.section2 .c1{
+  position: absolute;
+  background: url(./img/s2_c1.png) no-repeat;
+  background-position: center;
+  height: 1680px;
+  width: 100%;
+}
+section.section2 .c2{
+  position: absolute;
+  background: url(./img/s2_c2.png) no-repeat;
+  background-position: center;
+  height: 1680px;
+  width: 100%;
+}
