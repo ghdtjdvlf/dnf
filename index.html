@@ -10,30 +10,37 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js"
     integrity="sha512-WFN04846sdKMIP5LKNphMaWzU7YpMyCU245etK3g/2ARYbPK9Ub18eG+ljU96qKRCWh+quCY7yefSmlkQw1ANQ=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+    integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script defer src="main.js"></script>
 </head>
 
 <body>
   <div class="login_bar">
     <div class="left_item">
-      <a href="#" class="lb_logo">던전앤파이터</a>
-      <a href="#" class="lb_btn nx">넥슨ID 로그인</a>
-      <a href="#" class="lb_btn df">던파ID 로그인</a>
+      <a href="javascript:void(0)" class="lb_logo">던전앤파이터</a>
+      <a href="javascript:void(0)" class="lb_btn nx">넥슨ID 로그인</a>
+      <a href="javascript:void(0)" class="lb_btn df">던파ID 로그인</a>
      
     </div>
     <div class="right_item">
       <a class="lb_btn_nav">전체메뉴보기</a>
-      <a href="#" class="lb_btn_gs">gamestart</a>
+      <a href="javascript:void(0)" class="lb_btn_gs">gamestart</a>
     </div>
   </div>
 
   <div class="intothejoongcheon">
     <div class="wraper">
     <div class="bnrs">
-      <a href="#"><img src="./img/bnr1.png" alt=""></a>
-      <a href="#"><img src="./img/bnr2.png" alt=""></a>
-      <a href="#"><img src="./img/bnr3.png" alt=""></a>
+      <a href="javascript:void(0)"><img src="./img/bnr1.png" alt=""></a>
+      <a href="javascript:void(0)"><img src="./img/bnr2.png" alt=""></a>
+      <a href="javascript:void(0)"><img src="./img/bnr3.png" alt=""></a>
     </div>
 
     <section class="section">
@@ -60,20 +67,83 @@
     </section>
 
         <section class="section section2">
-          <div class="c1"></div>
-          <div class="c2"></div>
+          <div class="scene1" id="sex">
+            <div class="bg1 show"></div>
+            <div class="c1 show"></div>
+            <div class="c2 show"></div>
+            <p class="t1 show">첫 번째 - 죽음의 여신전</p>
+            <p class="t2 show">죽음의 관조자들과 함께 요괴들로부터 죽음의 여신전을 지켜주세요.</p>
+          </div>
+          <div class="scene2">
+            <div class="bg2"></div>
+            <div class="c3"></div>
+            <div class="c4"></div>
+            <p class="t3">두 번째 - 애쥬어 메인</p>
+            <p class="t4">마흐나발의 계략으로 빼앗긴 블루호크의 모선, 애쥬어 메인을 탈환해 주세요.</p>
+          </div>
+          <div class="scene3">
+            <div class="bg3"></div>
+            <div class="c5"></div>
+            <div class="c6"></div>
+            <p class="t5">세 번째 - 달이 잠긴 호수</p>
+            <p class="t6">죽음의 관조자들과 함께 요괴들로부터 죽음의 여신전을 지켜주세요.</p>
+          </div>
+          <div class="scene4">
+            <div class="bg4"></div>
+            <div class="c7"></div>
+            <div class="c8"></div>
+            <p class="t7">네 번째, 다섯 번째 - 백해의 기억</p>
+            <p class="t8">버니혼이 발명한 꿈결의 방의 첫 번째 실험을 도와주세요.</p>
+          </div>
+            <p class="bu_btn">
+              <a href="javascript:void(0)" id="btn1" class="on">1</a>
+              <a href="javascript:void(0)" id="btn2">2</a>
+              <a href="javascript:void(0)" id="btn3">3</a>
+              <a href="javascript:void(0)" id="btn4">4</a>
+            </p>
 
-        </section>
+            <p class="left_btn"> </p>
+            <p class="right_btn"> </p>
+          </section>
+          <section class="section3">
+            <h2>일반 던전 6종 & 특수 던전 5종 </h2>
+            <h3>중천 업데이트</h3>  
+            <div class="obj1"></div>
+            <div class="obj2"></div>
+            <div class="card-box">
+              <div class="card1"></div>
+              <div class="card2"></div>
+              <div class="card3"></div>
+            </div>
+          </section>  
 
 
+          
 
 
+          <!-- 스오ㅓ이퍼 -->
+          <!-- <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">Slide 1</div>
+              <div class="swiper-slide">Slide 2</div>
+              <div class="swiper-slide">Slide 3</div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-scrollbar"></div>
+          </div> -->
 
+          
 
 
   </div>
   </div>
-
+  <script type="module">
+    import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs'
+  
+    const swiper = new Swiper(...)
+  </script>
   <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
 </body>
 
