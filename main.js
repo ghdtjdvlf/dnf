@@ -79,12 +79,6 @@ navbtnEl.addEventListener('click' , function(){
 //1850 txt3
 //1930 txt4
 
-const s1 = document.querySelector('.scene1')
-const sex = document.querySelector('#sex')
-const s2 = document.querySelector('.scene2')
-const s3 = document.querySelector('.scene3')
-const s4 = document.querySelector('.scene4')
-
 const c1El = document.querySelector('.c1')
 const c2El = document.querySelector('.c2')
 const c3El = document.querySelector('.c3')
@@ -236,41 +230,12 @@ btn4.addEventListener('click', function(){
 
 // 다음 버튼 눌렀을때 1번 사진이면 2번으로 2면 3번으로 
 
-let 지금사진 = 2
+let 지금사진 = 1;
+console.log(지금사진);
+
 
 rightBtn.addEventListener('click', function () {
   if (지금사진 == 1) {
-    bg1El.classList.add('show')
-    bg2El.classList.remove('show')
-    bg3El.classList.remove('show')
-    bg4El.classList.remove('show')
-
-    c1El.classList.add('show')
-    c2El.classList.add('show')
-    c3El.classList.remove('show')
-    c4El.classList.remove('show')
-    c5El.classList.remove('show')
-    c6El.classList.remove('show')
-    c7El.classList.remove('show')
-    c8El.classList.remove('show')
-
-    btn1.classList.add('on')
-    btn2.classList.remove('on')
-    btn3.classList.remove('on')
-    btn4.classList.remove('on');
-
-    t1El.classList.add('show')
-    t2El.classList.add('show')
-    t3El.classList.remove('show')
-    t4El.classList.remove('show')
-    t5El.classList.remove('show')
-    t6El.classList.remove('show')
-    t7El.classList.remove('show')
-    t8El.classList.remove('show')
-    
-    지금사진 += 1;
-    console.log(지금사진);
-  } else if (지금사진 == 2) {
     bg1El.classList.remove('show')
     bg2El.classList.add('show')
     bg3El.classList.remove('show')
@@ -285,6 +250,11 @@ rightBtn.addEventListener('click', function () {
     c7El.classList.remove('show')
     c8El.classList.remove('show')
 
+    btn1.classList.remove('on')
+    btn2.classList.add('on')
+    btn3.classList.remove('on')
+    btn4.classList.remove('on')
+
     t1El.classList.remove('show')
     t2El.classList.remove('show')
     t3El.classList.add('show')
@@ -293,15 +263,141 @@ rightBtn.addEventListener('click', function () {
     t6El.classList.remove('show')
     t7El.classList.remove('show')
     t8El.classList.remove('show')
+    
+    지금사진 += 1;
+
+    console.log(지금사진);
+
+  } else if (지금사진 == 2) {
+    bg1El.classList.remove('show')
+    bg2El.classList.remove('show')
+    bg3El.classList.add('show')
+    bg4El.classList.remove('show')
+
+    c1El.classList.remove('show')
+    c2El.classList.remove('show')
+    c3El.classList.remove('show')
+    c4El.classList.remove('show')
+    c5El.classList.add('show')
+    c6El.classList.add('show')
+    c7El.classList.remove('show')
+    c8El.classList.remove('show')
+
+    t1El.classList.remove('show')
+    t2El.classList.remove('show')
+    t3El.classList.remove('show')
+    t4El.classList.remove('show')
+    t5El.classList.add('show')
+    t6El.classList.add('show')
+    t7El.classList.remove('show')
+    t8El.classList.remove('show')
 
     btn1.classList.remove('on')
-    btn2.classList.add('on')
-    btn3.classList.remove('on')
+    btn2.classList.remove('on')
+    btn3.classList.add('on')
     btn4.classList.remove('on');
     지금사진 += 1;
     console.log(지금사진);
   }
   else if (지금사진 == 3) {
+    bg1El.classList.remove('show')
+    bg2El.classList.remove('show')
+    bg3El.classList.remove('show')
+    bg4El.classList.add('show')
+
+    c1El.classList.remove('show')
+    c2El.classList.remove('show')
+    c3El.classList.remove('show')
+    c4El.classList.remove('show')
+    c5El.classList.remove('show')
+    c6El.classList.remove('show')
+    c7El.classList.add('show')
+    c8El.classList.add('show')
+
+    t1El.classList.remove('show')
+    t2El.classList.remove('show')
+    t3El.classList.remove('show')
+    t4El.classList.remove('show')
+    t5El.classList.remove('show')
+    t6El.classList.remove('show')
+    t7El.classList.add('show')
+    t8El.classList.add('show')
+
+    btn1.classList.remove('on')
+    btn2.classList.remove('on')
+    btn3.classList.remove('on')
+    btn4.classList.add('on')
+    지금사진 += 1;
+    console.log(지금사진);
+    
+  } else if (지금사진 == 4) {
+    bg1El.classList.add('show')
+    bg2El.classList.remove('show')
+    bg3El.classList.remove('show')
+    bg4El.classList.remove('show')
+
+    c1El.classList.add('show')
+    c2El.classList.add('show')
+    c3El.classList.remove('show')
+    c4El.classList.remove('show')
+    c5El.classList.remove('show')
+    c6El.classList.remove('show')
+    c7El.classList.remove('show')
+    c8El.classList.remove('show')
+
+    t1El.classList.add('show')
+    t2El.classList.add('show')
+    t3El.classList.remove('show')
+    t4El.classList.remove('show')
+    t5El.classList.remove('show')
+    t6El.classList.remove('show')
+    t7El.classList.remove('show')
+    t8El.classList.remove('show')
+
+    btn1.classList.add('on')
+    btn2.classList.remove('on')
+    btn3.classList.remove('on')
+    btn4.classList.remove('on')
+
+    지금사진 = 1;
+    console.log(지금사진);
+  }}) 
+
+  leftBtn.addEventListener('click',function(){
+    if(지금사진 == 1){ 
+      bg1El.classList.remove('show')
+      bg2El.classList.remove('show')
+      bg3El.classList.remove('show')
+      bg4El.classList.add('show')
+      c1El.classList.remove('show')
+      c2El.classList.remove('show')
+      c3El.classList.remove('show')
+      c4El.classList.remove('show')
+      c5El.classList.remove('show')
+      c6El.classList.remove('show')
+      c7El.classList.add('show')
+      c8El.classList.add('show')
+  
+      t1El.classList.remove('show')
+      t2El.classList.remove('show')
+      t3El.classList.remove('show')
+      t4El.classList.remove('show')
+      t5El.classList.remove('show')
+      t6El.classList.remove('show')
+      t7El.classList.add('show')
+      t8El.classList.add('show')
+  
+      btn1.classList.remove('on')
+      btn2.classList.remove('on')
+      btn3.classList.remove('on')
+      btn4.classList.add('on')  
+
+      지금사진 = 4;  
+      console.log(지금사진);
+    }
+
+    else if (지금사진 == 4 ){
+      
     bg1El.classList.remove('show')
     bg2El.classList.remove('show')
     bg3El.classList.add('show')
@@ -329,80 +425,90 @@ rightBtn.addEventListener('click', function () {
     btn2.classList.remove('on')
     btn3.classList.add('on')
     btn4.classList.remove('on')
-    지금사진 += 1;
+    
+    지금사진 -= 1;
     console.log(지금사진);
     
-  } else if (지금사진 == 4) {
+
+    }
+    
+    else if (지금사진 == 3){
+
+      //세번째
+
     bg1El.classList.remove('show')
-    bg2El.classList.remove('show')
+    bg2El.classList.add('show')
     bg3El.classList.remove('show')
-    bg4El.classList.add('show')
+    bg4El.classList.remove('show')
+
     c1El.classList.remove('show')
     c2El.classList.remove('show')
+    c3El.classList.add('show')
+    c4El.classList.add('show')
+    c5El.classList.remove('show')
+    c6El.classList.remove('show')
+    c7El.classList.remove('show')
+    c8El.classList.remove('show')
+
+    t1El.classList.remove('show')
+    t2El.classList.remove('show')
+    t3El.classList.add('show')
+    t4El.classList.add('show')
+    t5El.classList.remove('show')
+    t6El.classList.remove('show')
+    t7El.classList.remove('show')
+    t8El.classList.remove('show')
+
+    btn1.classList.remove('on')
+    btn2.classList.add('on')
+    btn3.classList.remove('on')
+    btn4.classList.remove('on')
+
+    지금사진 -= 1;
+    console.log(지금사진);
+
+    }
+
+    else if (지금사진 == 2){
+
+      //세번째
+
+    bg1El.classList.add('show')
+    bg2El.classList.remove('show')
+    bg3El.classList.remove('show')
+    bg4El.classList.remove('show')
+
+    c1El.classList.add('show')
+    c2El.classList.add('show')
     c3El.classList.remove('show')
     c4El.classList.remove('show')
     c5El.classList.remove('show')
     c6El.classList.remove('show')
-    c7El.classList.add('show')
-    c8El.classList.add('show')
+    c7El.classList.remove('show')
+    c8El.classList.remove('show')
 
-    t1El.classList.remove('show')
-    t2El.classList.remove('show')
+    t1El.classList.add('show')
+    t2El.classList.add('show')
     t3El.classList.remove('show')
     t4El.classList.remove('show')
     t5El.classList.remove('show')
     t6El.classList.remove('show')
-    t7El.classList.add('show')
-    t8El.classList.add('show')
+    t7El.classList.remove('show')
+    t8El.classList.remove('show')
 
-    btn1.classList.remove('on')
+    btn1.classList.add('on')
     btn2.classList.remove('on')
     btn3.classList.remove('on')
-    btn4.classList.add('on')
-    지금사진 = 1;
+    btn4.classList.remove('on')
+    지금사진 -= 1;
     console.log(지금사진);
-  }}) 
+    }})
 
-  leftBtn.addEventListener('click',function(){
-    if(지금사진 = 2){
-      bg1El.classList.remove('show')
-      bg2El.classList.remove('show')
-      bg3El.classList.remove('show')
-      bg4El.classList.add('show')
-      c1El.classList.remove('show')
-      c2El.classList.remove('show')
-      c3El.classList.remove('show')
-      c4El.classList.remove('show')
-      c5El.classList.remove('show')
-      c6El.classList.remove('show')
-      c7El.classList.add('show')
-      c8El.classList.add('show')
-      btn1.classList.remove('on')
-      btn2.classList.remove('on')
-      btn3.classList.remove('on')
-      btn4.classList.add('on')
-      지금사진 = 1;
-    }})
-  leftBtn.addEventListener('click',function(){
-    if(지금사진 = 1){
-      bg1El.classList.remove('show')
-      bg2El.classList.remove('show')
-      bg3El.classList.remove('show')
-      bg4El.classList.add('show')
-      c1El.classList.remove('show')
-      c2El.classList.remove('show')
-      c3El.classList.remove('show')
-      c4El.classList.remove('show')
-      c5El.classList.remove('show')
-      c6El.classList.remove('show')
-      c7El.classList.add('show')
-      c8El.classList.add('show')
-      btn1.classList.remove('on')
-      btn2.classList.remove('on')
-      btn3.classList.remove('on')
-      btn4.classList.add('on')
-    }})
-    
+
+
+
+
+
     const swiper = new Swiper('.swiper', {
       // Optional parameters
       loop: true,

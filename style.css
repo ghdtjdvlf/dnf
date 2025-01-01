@@ -1,11 +1,4 @@
-body {
-  height: 6000px;
-}
 
-.wraper {
-  width: 100%;
-  margin: 0 auto;
-}
 
 .intothejoongcheon {
   position: relative;
@@ -724,6 +717,7 @@ background-color: #e32443;
 
 .intothejoongcheon section.section3 {
   background: url(./img/s3_bg.jpg) center no-repeat;
+  top: -150px;
   height: 2100px;
   padding: 1px;
   position: relative;
@@ -760,44 +754,433 @@ section.section3 .obj2{
 }
 
 section.section3 .card-box {
-  background-color: #3392ff;
   position: absolute;
   width: 1440px;
   height: 1200px;
   margin-left: -720px;
-  top: 900px;
+  top: 850px;
   left: 50%;
+  
+  
 }
-
-
 
 section.section3 .card1 {
+  position: absolute;
+  left: 0;
   background: url(/img/s3_card1.png) no-repeat ;
-  width: ;
+  width: 460px;
+  height: 700px;
+  transition: all .2s;
+  transform: scale(1.0);
+
+}
+
+section.section3 .card1 {
+  position: absolute;
+  left: 0;
+  background: url(/img/s3_card1.png) no-repeat ;
+  width: 460px;
+  height: 700px;
+  transition: all .2s;
+
 }
 
 
 
-section.section3 .card2 {
 
+section.section3 .card1 b{
+  display: block;
+  color: white;
+  font-size: 40px;
+  margin-top:  270px;
+  letter-spacing: -3px;
+  
+}
+section.section3 .card1 span{
+  display: block;
+  color: white;
+  margin-top: 15px;
+  font-size: 18px;
+  line-height: 30px;
+}
+section.section3 .card1 .d0109{
+  display: block;
+  height: 36px;
+  width: 190px;
+  margin: 0 auto;
+  margin-top: 14px;
+  background-image: url(/img/update_0109.png) ;
+  
+}
+
+section.section3 .card2 {
+  position: absolute;
+  left: 490px;
+  background: url(/img/s3_card2.png) no-repeat ;
+  width: 460px;
+  height: 700px;
+}
+
+section.section3 .card2 b{
+  display: block;
+  color: white;
+  font-size: 40px;
+  margin-top:  270px;
+  letter-spacing: -3px;
+}
+section.section3 .card2 span{
+  display: block;
+  color: white;
+  margin-top: 15px;
+  font-size: 18px;
+  line-height: 30px;
+}
+section.section3 .card2 .d0109{
+  display: block;
+  height: 36px;
+  width: 190px;
+  margin: 0 auto;
+  margin-top: 14px;
+  background-image: url(/img/update_0109.png);
 }
 
 
 
 section.section3 .card3 {
+  position: absolute;
+  right: 0;
+  background: url(/img/s3_card3.png) no-repeat ;
+  width: 460px;
+  height: 700px;
 
+}
+
+section.section3 .card3 {
+  position: absolute;
+  right: 0;
+  background: url(/img/s3_card3.png) no-repeat ;
+  width: 460px;
+  height: 700px;
+
+}
+
+section.section3 .card3 b{
+  display: block;
+  color: white;
+  font-size: 40px;
+  margin-top:  270px;
+  letter-spacing: -3px;
+}
+section.section3 .card3 span{
+  display: block;
+  color: white;
+  margin-top: 15px;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+section.section3 .card3 .d0109{
+  display: block;
+  height: 36px;
+  width: 190px;
+  margin: 0 auto;
+  margin-top: 14px;
+  background-image: url(/img/update_0109.png);
+}
+
+
+section.section3 .card4 {
+  position: absolute;
+  top: 730px;
+  background: url(/img/s3_card4.png) no-repeat ;
+  width: 705px;
+  height: 420px;
+}
+
+section.section3 .card4 b{
+  display: block;
+  color: white;
+  font-size: 40px;
+  margin-top:  140px;
+  letter-spacing: -3px;
+}
+section.section3 .card4 span{
+  display: block;
+  color: white;
+  margin-top: 15px;
+  font-size: 17px;
+  line-height: 30px;
+}
+
+section.section3 .card4 .d0300{
+  display: block;
+  height: 36px;
+  width: 170px;
+  margin: 0 auto;
+  margin-top: 14px;
+  background-image: url(/img/update_03.png) ;
+  background-repeat: no-repeat;
 }
 
 
 
+section.section3 .card5 {
+  position: absolute;
+  top: 730px;
+  background: url(/img/s3_card5.png) no-repeat ;
+  width: 705px;
+  height: 420px;
+  right: 0;
+}
+
+section.section3 .card5 b{
+  display: block;
+  color: white;
+  font-size: 40px;
+  margin-top:  140px;
+  letter-spacing: -3px;
+}
+section.section3 .card5 span{
+  display: block;
+  color: white;
+  margin-top: 15px;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+section.section3 .card5 .d0500{
+  display: block;
+  height: 36px;
+  width: 170px;
+  margin: 0 auto;
+  margin-top: 14px;
+  background-image: url(/img/update_05.png) ;
+  background-repeat: no-repeat;
+}
+
+
+/* section4 */
+
+.intothejoongcheon section.section4 {
+  position: relative;
+  top: -152px;;
+  background: url(./img/s4_bg.jpg) center no-repeat;
+  width: 100%;
+  height: 1400px;
+  padding: 1px;
+}
+
+.intothejoongcheon section.section4 h2{
+  position: absolute;
+  width: 100%;
+  margin-top: 150px;
+  font-size: 70px;
+  color: white;
+}
+.intothejoongcheon section.section4 h3{
+  width: 100%;
+  margin-top: 250px;
+  font-size: 21px;  
+  line-height: 35px;
+  letter-spacing: -1px;
+  color: white
+}
+ section.section4 .d0109 {
+  background: url(./img/update_0109.png);
+  width: 190px;
+  height: 36px;
+  margin: 0 auto;
+  margin-top: 15px;
+}
 
 
 
+section.section4 .obj1 {
+  position: absolute;
+  background: url(./img/s4_c1.png) no-repeat center;
+  width: 100%;
+  height: 1400px;
+  top: 0px;
+
+}
+
+section.section4 .obj2 {
+  position: absolute;
+  background: url(./img/s4_c2.png) no-repeat center;
+  width: 100%;
+  height: 1400px;
+  top: 0px;
+
+}
+
+/* section5 */
+
+  section.section5 {
+    margin-top: -152px;
+    background: url(./img/s5_bg.jpg) no-repeat center;
+    width: 2560px;
+    height: 1400px;
+    position: relative;
+    padding: 1px;
+    margin: 0 auto;
+    transform: translate(0,-154px);
+  }
+
+  section.section5 h2{
+    position: absolute;
+    width: 100%;
+    margin-top: 150px;
+    font-size: 70px;
+    color: white;
+  }
+
+  section.section5 h3{
+    width: 100%;
+    margin-top: 250px;
+    font-size: 21px;  
+    line-height: 35px;
+    letter-spacing: -1px;
+    color: white
+  }
 
 
+  section.section5 .d0200{
+    background: url(./img/update_02.png) no-repeat center;
+    width: 190px;
+    height: 36px;
+    margin: 0 auto;
+    margin-top: 50px;
+  }
+  section.section5 .preview{
+    position: absolute;
+    background: url(./img/s5_c1.png);
+    width: 368px;
+    height: 548px;
+    left: 50%;
+    transform: translate(0,100px);
+  }
+  section.section5 .reward{
+    position: absolute;
+    background: url(./img/s5_c2.png);
+    width: 368px;
+    height: 548px;
+    left: 50%;
+    transform: translate(340px, 30px);
 
+  }
 
+  /* section6 */
 
+  section.section6 {
+    background: url(./img/s6_bg.jpg) center;
+    width: 2560px;
+    height: 1400px;
+    margin: 0 auto;
+    transform: translate(0,-156px);
+    position: relative;
+    padding: 1px;
+  }
+
+  section.section6 h2{
+    position: absolute;
+    width: 100%;
+    margin-top: 150px;
+    font-size: 70px;
+    color: white;
+  }
+
+  section.section6 h3{
+    width: 100%;
+    margin-top: 250px;
+    font-size: 21px;  
+    line-height: 35px;
+    letter-spacing: -1px;
+    color: white
+  }
+  section.section6 .d0400{
+    background: url(./img/update_04.png) no-repeat center;
+    width: 190px;
+    height: 36px;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+
+  /* section7 */
+
+  section.section7 {
+    background: url(./img/s7_bg.jpg);
+    width: 2560px;
+    height: 2820px;
+    position: relative;
+    margin: 0 auto;
+    padding: 1px;
+    transform: translate(0,-156px);
+  }
+
+  section.section7 h2{
+    position: absolute;
+    width: 100%;
+    margin-top: 150px;
+    font-size: 70px;
+    color: white;
+  }
+
+  section.section7 h3{
+    width: 100%;
+    margin-top: 250px;
+    font-size: 21px;  
+    line-height: 35px;
+    letter-spacing: -1px;
+    color: white
+  }
+
+  section.section7 .c1 {
+    background: url(./img/s7_c1.png) center;
+    height: 1830px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: -1px;
+  }
+  section.section7 .c2 {
+    background: url(./img/s7_c2.png) center no-repeat;
+    height: 1830px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+  }
+
+  /* section8 */
+
+  section.section8 {
+    background: url(./img/s8_bg.jpg);
+    width: 2560px;
+    height: 1300px;
+    margin: 0 auto;
+    padding: 1px ;
+    position: relative;
+    transform: translate(0,-159px);
+  }
+
+  section.section8 h2{
+    position: absolute;
+    width: 100%;
+    margin-top: 400px;
+    font-size: 75px;
+    color: white;
+    mix-blend-mode: overlay;
+  }
+
+  section.section8 h3{
+    width: 100%;
+    margin-top: 500px;
+    font-size: 21px;  
+    line-height: 35px;
+    letter-spacing: -1px;
+    color: white;
+    mix-blend-mode: overlay;
+  }
+  
 
 
 .swiper {
