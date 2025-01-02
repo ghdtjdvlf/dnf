@@ -233,8 +233,8 @@ section.section2 .c1{
   opacity: 0;
   transition: all .55s;
   transform: translate(-150px,0);
-
 }
+
 section.section2 .c1.show{
   position: absolute;
   background: url(./img/s2_c1.png) no-repeat;
@@ -436,6 +436,8 @@ section.section2 p.t4.show{
 }
 
 /* 세번째 */
+
+
 section.section2 .bg3{
   position: absolute;
   background: url(./img/s2_bg3.jpg) no-repeat;
@@ -729,28 +731,79 @@ background-color: #e32443;
   margin-top: 150px;
   font-size: 70px;
   color: white;
+  transform: translate(0,50px);
+  opacity: 0;
+  transition: all .5s;
 }
+.intothejoongcheon section.section3 h2.on{
+  position: absolute;
+  width: 100%;
+  margin-top: 150px;
+  font-size: 70px;
+  color: white;
+  transform: translate(0,0px);
+  opacity: 1;
+}
+
+
 .intothejoongcheon section.section3 h3{
   width: 100%;
   margin-top: 250px;
   font-size: 25px;  
-  color: white
+  color: white;
+  transition: all .5s;
+  transform: translate(0,50px);
+  opacity: 0;
+}
+.intothejoongcheon section.section3 h3.on{
+  width: 100%;
+  margin-top: 250px;
+  font-size: 25px;  
+  color: white;
+  transform: translate(0,20px);
+  opacity: 1;
 }
 
-section.section3 .obj1{
+section.section3 .s3obj1{
   background: url(./img/s3_c1.png) no-repeat center;
   position: absolute;
   height: 280px;
   width: 100%;
   top: 400pX;
+  transition: all .5s;
+  transform: translate(0,50px);
+  opacity: 0;
 }
   
-section.section3 .obj2{
+section.section3 .s3obj1.on{
+  background: url(./img/s3_c1.png) no-repeat center;
+  position: absolute;
+  height: 280px;
+  width: 100%;
+  top: 400pX;
+  transform: translate(0,0px);
+  opacity: 1;
+}
+  
+section.section3 .s3obj2{
   background: url(./img/s3_c2.png) no-repeat center;
   position: absolute;
   height: 300px;
   width: 100%;
   top: 600px;
+  transition: all .5s;
+  transform: translate(0,50px);
+  opacity: 0;
+}
+section.section3 .s3obj2.on{
+  background: url(./img/s3_c2.png) no-repeat center;
+  position: absolute;
+  height: 300px;
+  width: 100%;
+  top: 600px;
+  transition: all .5s;
+  transform: translate(0,0px);
+  opacity: 1;
 }
 
 section.section3 .card-box {
@@ -760,50 +813,66 @@ section.section3 .card-box {
   margin-left: -720px;
   top: 850px;
   left: 50%;
-  
+  transition: all .5s;
+  transform: translate(0,50px);
+  opacity: 0;
   
 }
+section.section3 .card-box.on {
+  position: absolute;
+  width: 1440px;
+  height: 1200px;
+  margin-left: -720px;
+  top: 850px;
+  left: 50%;
+  transform: translate(0,0);
+  opacity: 1;
+}
 
+section.section3 .cardbox1 {
+  position: absolute;
+  left: 0;
+  width: 460px;
+  height: 700px;
+  overflow: hidden;
+}
 section.section3 .card1 {
   position: absolute;
   left: 0;
-  background: url(/img/s3_card1.png) no-repeat ;
   width: 460px;
   height: 700px;
-  transition: all .2s;
-  transform: scale(1.0);
-
+  background-image: url(./img/s3_card1.png);
+  transition: all .4s;
 }
 
-section.section3 .card1 {
+section.section3 .card1:hover {
+  transform: scale(1.2);
+}
+
+section.section3 .cardbox1 b{
   position: absolute;
-  left: 0;
-  background: url(/img/s3_card1.png) no-repeat ;
-  width: 460px;
-  height: 700px;
-  transition: all .2s;
-
-}
-
-
-
-
-section.section3 .card1 b{
   display: block;
   color: white;
   font-size: 40px;
   margin-top:  270px;
   letter-spacing: -3px;
-  
+  left: 60px;
 }
-section.section3 .card1 span{
+
+section.section3 .cardbox1 span{
+  position: absolute;
   display: block;
   color: white;
   margin-top: 15px;
   font-size: 18px;
   line-height: 30px;
+  top:50%;
+  left: 35px;
+  transform: translate(0,-40px);
 }
-section.section3 .card1 .d0109{
+section.section3 .cardbox1 .d0109{
+  position: absolute;
+  transform: translate(150px,385px);
   display: block;
   height: 36px;
   width: 190px;
@@ -813,98 +882,142 @@ section.section3 .card1 .d0109{
   
 }
 
-section.section3 .card2 {
+
+
+section.section3 .cardbox2 {
   position: absolute;
   left: 490px;
+  width: 460px;
+  height: 700px;
+  overflow: hidden;
+}
+section.section3 .cardbox2 .card2 {
+  position: absolute;
   background: url(/img/s3_card2.png) no-repeat ;
   width: 460px;
   height: 700px;
+  transition: all .4s;
+}
+section.section3 .card2:hover {
+  transform: scale(1.1);
 }
 
-section.section3 .card2 b{
+section.section3 .cardbox2 b{
+  position: absolute;
   display: block;
   color: white;
   font-size: 40px;
   margin-top:  270px;
   letter-spacing: -3px;
+  transform: translate(135px, 4px);
+
 }
-section.section3 .card2 span{
+section.section3 .cardbox2 span{
+  position: absolute;
   display: block;
   color: white;
   margin-top: 15px;
-  font-size: 18px;
+  font-size: 17px;
   line-height: 30px;
+  transform: translate(22px,312px);
 }
-section.section3 .card2 .d0109{
+
+section.section3 .cardbox2 .d0109{
+  position: absolute;
   display: block;
   height: 36px;
   width: 190px;
   margin: 0 auto;
   margin-top: 14px;
   background-image: url(/img/update_0109.png);
+  transform: translate(140px,384px);
 }
 
 
 
+section.section3 .cardbox3 {
+  position: absolute;
+  right: 0;
+  width: 460px;
+  height: 700px;
+  overflow: hidden;
+}
 section.section3 .card3 {
   position: absolute;
   right: 0;
   background: url(/img/s3_card3.png) no-repeat ;
   width: 460px;
   height: 700px;
-
+  transition: all .4s
+}
+section.section3 .card3:hover {
+transform: scale(1.1);
 }
 
-section.section3 .card3 {
+
+section.section3 .cardbox3 b{
   position: absolute;
-  right: 0;
-  background: url(/img/s3_card3.png) no-repeat ;
-  width: 460px;
-  height: 700px;
-
-}
-
-section.section3 .card3 b{
   display: block;
   color: white;
   font-size: 40px;
   margin-top:  270px;
   letter-spacing: -3px;
+  transform: translate(107px,10px)
 }
-section.section3 .card3 span{
+section.section3 .cardbox3 span{
+  position: absolute;
   display: block;
   color: white;
   margin-top: 15px;
   font-size: 18px;
   line-height: 30px;
+  transform:translate(40px,315px)
 }
 
-section.section3 .card3 .d0109{
+section.section3 .cardbox3 .d0109{
+  position: absolute;
   display: block;
   height: 36px;
   width: 190px;
   margin: 0 auto;
   margin-top: 14px;
   background-image: url(/img/update_0109.png);
+  transform: translate(130px,380px)
 }
 
 
-section.section3 .card4 {
+section.section3 .cardbox4 {
   position: absolute;
   top: 730px;
+  width: 705px;
+  height: 420px;
+  overflow: hidden;
+}
+section.section3 .card4 {
+  position: absolute;
+  top: 0px;
   background: url(/img/s3_card4.png) no-repeat ;
   width: 705px;
   height: 420px;
+  transition: all .4s;
+}
+section.section3 .card4:hover {
+
+  scale: 1.1;
 }
 
-section.section3 .card4 b{
+section.section3 .cardbox4 b{
+  position: absolute;
+  transform: translate(280px,0px);
   display: block;
   color: white;
   font-size: 40px;
   margin-top:  140px;
   letter-spacing: -3px;
 }
-section.section3 .card4 span{
+section.section3 .cardbox4 span{
+  position: absolute;
+  transform: translate(210px,180px);
   display: block;
   color: white;
   margin-top: 15px;
@@ -912,7 +1025,9 @@ section.section3 .card4 span{
   line-height: 30px;
 }
 
-section.section3 .card4 .d0300{
+section.section3 .cardbox4 .d0300{
+  position: absolute;
+  transform: translate(270px,250px);
   display: block;
   height: 36px;
   width: 170px;
@@ -924,31 +1039,47 @@ section.section3 .card4 .d0300{
 
 
 
-section.section3 .card5 {
+section.section3 .cardbox5 {
   position: absolute;
   top: 730px;
+  width: 705px;
+  height: 420px;
+  right: 0;
+  overflow: hidden;
+}
+section.section3 .card5 {
+  position: absolute;
+  top: 0px;
   background: url(/img/s3_card5.png) no-repeat ;
   width: 705px;
   height: 420px;
   right: 0;
+  transition: all .4s;
+}
+section.section3 .card5:hover {
+scale: 1.1;
 }
 
-section.section3 .card5 b{
+section.section3 .cardbox5 b{
+  position: absolute;
+  transform: translate(240px,0px);
   display: block;
   color: white;
   font-size: 40px;
   margin-top:  140px;
   letter-spacing: -3px;
 }
-section.section3 .card5 span{
+section.section3 .cardbox5 span{
   display: block;
   color: white;
   margin-top: 15px;
   font-size: 18px;
   line-height: 30px;
+  position: absolute;
+  transform: translate(100px,180px);
 }
 
-section.section3 .card5 .d0500{
+section.section3 .cardbox5 .d0500{
   display: block;
   height: 36px;
   width: 170px;
@@ -956,6 +1087,8 @@ section.section3 .card5 .d0500{
   margin-top: 14px;
   background-image: url(/img/update_05.png) ;
   background-repeat: no-repeat;
+  transform: translate(270px,250px);
+  position: absolute;
 }
 
 
@@ -976,15 +1109,45 @@ section.section3 .card5 .d0500{
   margin-top: 150px;
   font-size: 70px;
   color: white;
+  transform: translate(0,50px);
+  opacity: 0;
+  transition: all .5s;
 }
+.intothejoongcheon section.section4 h2.on{
+  position: absolute;
+  width: 100%;
+  margin-top: 150px;
+  font-size: 70px;
+  color: white;
+  transform: translate(0,0);
+  opacity: 1;
+
+}
+
+
 .intothejoongcheon section.section4 h3{
   width: 100%;
   margin-top: 250px;
   font-size: 21px;  
   line-height: 35px;
   letter-spacing: -1px;
-  color: white
+  color: white;
+  transform: translate(0,50px);
+  opacity: 0;
+  transition: all .5s;
 }
+.intothejoongcheon section.section4 h3.on{
+  width: 100%;
+  margin-top: 250px;
+  font-size: 21px;  
+  line-height: 35px;
+  letter-spacing: -1px;
+  color: white;
+  transform: translate(0,0px);
+  opacity: 1;
+}
+
+
  section.section4 .d0109 {
   background: url(./img/update_0109.png);
   width: 190px;
@@ -1001,7 +1164,19 @@ section.section4 .obj1 {
   width: 100%;
   height: 1400px;
   top: 0px;
-
+  transform: translate(0,50px);
+  opacity: 0;
+  transition: all .5s;
+}
+section.section4 .obj1.on {
+  position: absolute;
+  background: url(./img/s4_c1.png) no-repeat center;
+  width: 100%;
+  height: 1400px;
+  top: 0px;
+  transform: translate(0,0);
+  opacity: 1;
+  transition: all .5s;
 }
 
 section.section4 .obj2 {
@@ -1010,7 +1185,19 @@ section.section4 .obj2 {
   width: 100%;
   height: 1400px;
   top: 0px;
-
+  transform: translate(0,50px);
+  opacity: 0;
+  transition: all .5s;
+}
+section.section4 .obj2.on {
+  position: absolute;
+  background: url(./img/s4_c2.png) no-repeat center;
+  width: 100%;
+  height: 1400px;
+  top: 0px;
+  transform: translate(0,0px);
+  opacity: 1;
+  transition: all .5s;
 }
 
 /* section5 */
@@ -1032,6 +1219,18 @@ section.section4 .obj2 {
     margin-top: 150px;
     font-size: 70px;
     color: white;
+    transform: translate(0,50px);
+    opacity: 0;
+    transition: all .5s;
+  }
+  section.section5 h2.on{
+    position: absolute;
+    width: 100%;
+    margin-top: 150px;
+    font-size: 70px;
+    color: white;
+    transform: translate(0,0);
+    opacity: 1;
   }
 
   section.section5 h3{
@@ -1040,7 +1239,20 @@ section.section4 .obj2 {
     font-size: 21px;  
     line-height: 35px;
     letter-spacing: -1px;
-    color: white
+    color: white;
+    transform: translate(0,50px);
+    opacity: 0;
+    transition: all .5s;
+  }
+  section.section5 h3.on{
+    width: 100%;
+    margin-top: 250px;
+    font-size: 21px;  
+    line-height: 35px;
+    letter-spacing: -1px;
+    color: white;
+    transform: translate(0,0);
+    opacity: 1;
   }
 
 
@@ -1049,24 +1261,61 @@ section.section4 .obj2 {
     width: 190px;
     height: 36px;
     margin: 0 auto;
-    margin-top: 50px;
+    margin-top: 30px;
+    transform: translate(0, 50px);
+    opacity: 0;
+    transition: all .5s;
   }
+  section.section5 .d0200.on{
+    background: url(./img/update_02.png) no-repeat center;
+    width: 190px;
+    height: 36px;
+    margin: 0 auto;
+    margin-top: 30px;
+    transform: translate(0,0px);
+    opacity: 1;
+    transition: all .5s;
+  }
+
+
   section.section5 .preview{
     position: absolute;
     background: url(./img/s5_c1.png);
     width: 368px;
     height: 548px;
     left: 50%;
-    transform: translate(0,100px);
+    transform: translate(0,150px);
+    opacity: 0;
+    transition: all .5s;
   }
+  section.section5 .preview.on{
+    position: absolute;
+    background: url(./img/s5_c1.png);
+    width: 368px;
+    height: 548px;
+    left: 50%;
+    transform: translate(0,100px);
+    opacity: 1;
+  }
+
   section.section5 .reward{
     position: absolute;
     background: url(./img/s5_c2.png);
     width: 368px;
     height: 548px;
     left: 50%;
+    transform: translate(340px, 80px);
+    opacity: 0;
+    transition: all .5s;
+  }
+  section.section5 .reward.on{
+    position: absolute;
+    background: url(./img/s5_c2.png);
+    width: 368px;
+    height: 548px;
+    left: 50%;
     transform: translate(340px, 30px);
-
+    opacity: 1;
   }
 
   /* section6 */
@@ -1087,6 +1336,19 @@ section.section4 .obj2 {
     margin-top: 150px;
     font-size: 70px;
     color: white;
+    transform: translate(0, 50px);
+    opacity: 0;
+    transition: all .5s;
+  }
+  section.section6 h2.on{
+    position: absolute;
+    width: 100%;
+    margin-top: 150px;
+    font-size: 70px;
+    color: white;
+    transform: translate(0, 0);
+    opacity: 1;
+    transition: all .5s;
   }
 
   section.section6 h3{
@@ -1095,7 +1357,21 @@ section.section4 .obj2 {
     font-size: 21px;  
     line-height: 35px;
     letter-spacing: -1px;
-    color: white
+    color: white;
+    transform: translate(0, 50px);
+    opacity: 0;
+    transition: all .5s;
+  }
+  section.section6 h3.on{
+    width: 100%;
+    margin-top: 250px;
+    font-size: 21px;  
+    line-height: 35px;
+    letter-spacing: -1px;
+    color: white;
+    transform: translate(0, 0px);
+    opacity: 1;
+    transition: all .5s;
   }
   section.section6 .d0400{
     background: url(./img/update_04.png) no-repeat center;
@@ -1103,6 +1379,18 @@ section.section4 .obj2 {
     height: 36px;
     margin: 0 auto;
     margin-top: 20px;
+    transform: translate(0, 50px);
+    opacity: 0;
+    transition: all .5s;
+  }
+  section.section6 .d0400.on{
+    background: url(./img/update_04.png) no-repeat center;
+    width: 190px;
+    height: 36px;
+    margin: 0 auto;
+    margin-top: 20px;
+    transform: translate(0, 0px);
+    opacity: 1;
   }
 
   /* section7 */
@@ -1123,6 +1411,9 @@ section.section4 .obj2 {
     margin-top: 150px;
     font-size: 70px;
     color: white;
+    transform: translate(0, 50px);
+    opacity: 0;
+    transition: all .5s;
   }
 
   section.section7 h3{
@@ -1131,7 +1422,30 @@ section.section4 .obj2 {
     font-size: 21px;  
     line-height: 35px;
     letter-spacing: -1px;
-    color: white
+    color: white;
+    transform: translate(0, 50px);
+    opacity: 0;
+    transition: all .5s;
+  }
+  section.section7 h2.on{
+    position: absolute;
+    width: 100%;
+    margin-top: 150px;
+    font-size: 70px;
+    color: white;
+    transform: translate(0, 0px);
+    opacity: 1;
+  }
+
+  section.section7 h3.on{
+    width: 100%;
+    margin-top: 250px;
+    font-size: 21px;  
+    line-height: 35px;
+    letter-spacing: -1px;
+    color: white;
+    transform: translate(0, 0px);
+    opacity: 1;
   }
 
   section.section7 .c1 {
@@ -1141,6 +1455,9 @@ section.section4 .obj2 {
     position: absolute;
     top: 0;
     left: -1px;
+    transform: translate(0, 50px);
+    opacity: 0;
+    transition: all .5s;
   }
   section.section7 .c2 {
     background: url(./img/s7_c2.png) center no-repeat;
@@ -1148,6 +1465,28 @@ section.section4 .obj2 {
     width: 100%;
     position: absolute;
     bottom: 0;
+    transform: translate(0, 50px);
+    opacity: 0;
+    transition: all .5s;
+  }
+  section.section7 .c1.on {
+    background: url(./img/s7_c1.png) center;
+    height: 1830px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: -1px;
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+  section.section7 .c2.on {
+    background: url(./img/s7_c2.png) center no-repeat;
+    height: 1830px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    transform: translate(0, 0);
+    opacity: 1;
   }
 
   /* section8 */
@@ -1190,4 +1529,26 @@ section.section4 .obj2 {
 
 .swiper-slide{
   background-image: url(./img/s1_c1.png);
+}
+
+.roTlqkf {
+  width: 500px;
+  height: 500px;
+  border: solid 1px red;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.rotoRL {
+  width: 100%;
+  height: 100%;
+  background: url(./img/s7_c1.png)  no-repeat;
+  background-size: contain;
+}
+.rotoRL:hover {
+  width: 100%;
+  height: 100%;
+  background: url(./img/s7_c1.png)  no-repeat;
+  background-size: contain;
+  transform: scale(1.2);
 }

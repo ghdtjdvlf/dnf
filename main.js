@@ -1,24 +1,73 @@
 const navbtnEl = document.querySelector('.lb_btn_nav')
 const menuEl = document.querySelector('.menu')
-const txt1 = document.querySelector('.txt1')
-const txt2 = document.querySelector('.txt2')
-const txt3 = document.querySelector('.txt3')
-const txt4 = document.querySelector('.txt4')
 const secimg1 = document.querySelector('.secimg1')
 const h2Els = document.querySelectorAll('h2')
+const h3Els = document.querySelectorAll('h3')
+
+const s4 = document.querySelector('section.section4')
+const s5 = document.querySelector('section.section5')
+const s6 = document.querySelector('section.section6')
+const s7 = document.querySelector('section.section7')
+
+const s4ob1 =s4.querySelector('.obj1')
+const s4ob2 =s4.querySelector('.obj2')
+
+const s5up = s5.querySelector('.d0200')
+const preview = s5.querySelector('.preview')
+const reward = s5.querySelector('.reward')
+
+const s6up = s6.querySelector('.d0400')
+
+const s7c1 = s7.querySelector('.c1')
+const s7c2 = s7.querySelector('.c2')
+
+
+
+
+
+
+const s3obj1 = document.querySelector('.s3obj1') 
+const s3obj2 = document.querySelector('.s3obj2') 
+const cardbox = document.querySelector('.card-box') 
 
 const io = new IntersectionObserver(function(entries){
   entries.forEach(function(entry){
-    if(!entry.isIntersecting){
-      return
+    if(entry.isIntersecting){
+      entry.target.classList.add('on')
+    } else {
+      entry.target.classList.remove('on')
     }
-    entry.target.classList.add('on')
+    
   })
 })
+
+
 
 h2Els.forEach(function(el){
   io.observe(el)
 })
+h3Els.forEach(function(el){
+  io.observe(el)
+})
+
+io.observe(s7c1);
+io.observe(secimg1);
+io.observe(s3obj1);
+io.observe(s3obj2);
+io.observe(cardbox);
+io.observe(s4ob1);
+io.observe(s4ob2);
+io.observe(s5up);
+io.observe(preview);
+io.observe(reward);
+io.observe(s6up);
+io.observe(s7c1);
+io.observe(s7c2);
+
+
+
+
+
 
 
 // 클릭시 close로 변경
@@ -33,43 +82,43 @@ navbtnEl.addEventListener('click' , function(){
 //   console.log(window.screenY,scrollX); }))
 
 
-  window.addEventListener('scroll',function(){
-    if(window.scrollY > 600){
-      txt1.classList.add('on')
-    } else {
-      txt1.classList.remove('on')
-    }
-  })
-  window.addEventListener('scroll',function(){
-    if(window.scrollY > 700){
-      txt2.classList.add('on')
-    } else {
-      txt2.classList.remove('on')
-    }
-  })
-  window.addEventListener('scroll',function(){
-    if(window.scrollY > 890){
-      secimg1.classList.add('on')
-    } else {
-      secimg1.classList.remove('on')
-    }
-  })
+  // window.addEventListener('scroll',function(){
+  //   if(window.scrollY > 600){
+  //     txt1.classList.add('on')
+  //   } else {
+  //     txt1.classList.remove('on')
+  //   }
+  // })
+  // window.addEventListener('scroll',function(){
+  //   if(window.scrollY > 700){
+  //     txt2.classList.add('on')
+  //   } else {
+  //     txt2.classList.remove('on')
+  //   }
+  // })
+  // window.addEventListener('scroll',function(){
+  //   if(window.scrollY > 890){
+  //     secimg1.classList.add('on')
+  //   } else {
+  //     secimg1.classList.remove('on')
+  //   }
+  // })
   
-  window.addEventListener('scroll',function(){
-    if(window.scrollY > 1850){
-      txt3.classList.add('on')
-    } else {
-      txt3.classList.remove('on')
-    }
-  })
+  // window.addEventListener('scroll',function(){
+  //   if(window.scrollY > 1850){
+  //     txt3.classList.add('on')
+  //   } else {
+  //     txt3.classList.remove('on')
+  //   }
+  // })
   
-  window.addEventListener('scroll',function(){
-    if(window.scrollY > 1930){
-      txt4.classList.add('on')
-    } else {
-      txt4.classList.remove('on')
-    }
-  })
+  // window.addEventListener('scroll',function(){
+  //   if(window.scrollY > 1930){
+  //     txt4.classList.add('on')
+  //   } else {
+  //     txt4.classList.remove('on')
+  //   }
+  // })
 
   
 // 600 TXT1 1900
@@ -109,6 +158,7 @@ const btn3 = document.querySelector('#btn3')
 const btn4 = document.querySelector('#btn4')
 const leftBtn = document.querySelector('.left_btn')
 const rightBtn = document.querySelector('.right_btn')
+
 
 btn1.addEventListener('click', function(){
   bg1El.classList.add('show')
