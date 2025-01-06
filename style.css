@@ -1,3 +1,15 @@
+body{
+  font-family: "Noto Sans KR", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 500;
+
+}
+
+a {
+  text-decoration: none;
+}
+
 
 
 .intothejoongcheon {
@@ -16,7 +28,183 @@
 
 }
 
+/* submenu */
 
+.submenu_off{
+  position: fixed;
+  background: url(./img/btn_open_aside.png);
+  width: 300px;
+  height: 85px;
+  z-index: 700;
+  right: 0;
+  transition: all .4s
+}
+
+.submenu_off.on{
+  position: fixed;
+  right: 0;
+  width: 85px;
+  height: 85px;
+  cursor: pointer;
+}
+
+.submenu_off .submenu_off_btn{
+  position: fixed;
+  right: 0;
+  width: 85px;
+  height: 85px;
+  cursor: pointer;
+}
+
+
+.submenu_on {
+  display: block;
+  z-index: 800;
+  position: fixed;
+  height: 100%;
+  width: 300px;
+  background-color: #111;
+  right: 0;
+  transition: all .4s;
+  transform: translate(300px,0);
+  
+}
+.submenu_on.on {
+  z-index: 800;
+  position: fixed;
+  height: 100%;
+  width: 300px;
+  background-color: #111;
+  right: 0;
+  transform: translate(0,0);
+}
+
+.submenu_close {
+  display: block;
+  right: 300px;
+  z-index: 800;
+  position: fixed;
+  background: url(./img/aside_close.png);
+  width: 85px;
+  height: 85px;
+  transform: translate(400px,0);
+  transition: all .4s;
+}
+.submenu_close.on{
+  transform: translate(0px,0);
+}
+
+.submenu_on ul{
+  padding-top: 9px;
+}
+
+.submenu_on li{
+  text-align: left;
+  font-size: 30px;
+  padding: 22px 0 8px 29px;
+  color: #404040;
+  transition: all .2s;
+}
+.submenu_on li:hover{
+  color: #e32443;
+}
+
+
+
+.submenu_on li a{
+
+}
+
+/* menu */
+
+.menu {
+  z-index: 9000;
+  right: 240px;
+  position: fixed;
+  background-color: #f2f4f6;
+  width: 1260px;
+  border-left: 1px solid #818692;
+  border-right: 1px solid #818692;
+  display: none;
+}
+.menu.on {
+  display: block;
+  opacity: 1;
+  z-index: 9000;
+  right: 240px;
+  position: fixed;
+  background-color: #f2f4f6;
+  width: 1260px;
+  border-left: 1px solid #818692;
+  border-right: 1px solid #818692;
+}
+
+.ttmenu {
+  display: flex;
+  margin-top: 30px;
+
+}
+
+.ttmenu ul{
+  border-right: 1px solid #dcdee8;
+  text-align: center;
+  width: 140px;
+  
+
+}
+.ttmenu ul li{
+  text-align: center;
+}
+.ttmenu li.li1{
+  margin-bottom: 10px;
+
+}
+
+.ttmenu ul li a {
+  line-height: 24px;
+  display: block;
+  text-align: center;
+  color: #a2a5ac;
+  font-size: 13px;
+  line-height: 24px;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.ttmenu ul li a:hover{
+    color: #3392ff;
+}
+
+.qmenu {
+  padding: 28px 50px 30px 0px;
+  text-align: right;
+  border-bottom: 1px solid #818692;
+}
+
+
+.qmenu a{
+    display: inline-block;
+    padding-left: 39px;
+    margin-left: 30px;
+    background: url(../img/ico_open_nav.png) no-repeat;
+    line-height: 31px;
+    color: #6a6e76;
+    font-size: 14px;
+    font-weight: 500;
+}
+.qmenu a:nth-child(2){
+  background-position-y: -50px;
+}
+
+
+/* submenu */
+
+
+
+
+
+
+/* login bar */
 .login_bar {
   display: flex;
   position: fixed;
@@ -27,7 +215,7 @@
   height: 50px;
   background: #3f4554;
   border-bottom: 1px solid #1d2127;
-  z-index: 800;
+  z-index: 8000;
 }
 
 .login_bar .left_item {
@@ -39,6 +227,7 @@
   background-image: url(./img/lognbar_logo.png);
   width: 140px;
   height: 49px;
+  text-indent: -9999px;
 }
 
 .login_bar a.lb_btn.nx {
@@ -74,6 +263,7 @@
   width: 240px;
   height: 49px;
   background-image: url(./img/lognbar_gamestart.png);
+  text-indent: -9999px;
 }
 
 .login_bar .lb_btn_nav {
@@ -82,6 +272,19 @@
   background-image: url(./img/btn_open_nav.png);
   cursor: pointer;
 }
+
+.login_bar .lb_btn_nav.close {
+  width: 55px;
+  height: 49px;
+  background: url(./img/btn_open_nav.png)  0 -100px;;
+  cursor: pointer;
+  text-indent: -9999px;
+}
+
+
+
+
+
 
 .bnrs{
   position: absolute;
@@ -222,6 +425,7 @@ section.section2 {
   background-position: center;
   opacity: 1;
 }
+
 
 section.section2 .c1{
   position: absolute;
@@ -1124,6 +1328,24 @@ section.section3 .cardbox5 .d0500{
 
 }
 
+section.section4 .d0109{
+  background: url(./img/update_0109.png);
+  width: 190px;
+  height: 34px;
+  transform: translate(0, 50px);
+  opacity: 0;
+  transition: all .5s;
+}
+section.section4 .d0109.on{
+  background: url(./img/update_0109.png);
+  width: 190px;
+  height: 34px;
+  transform: translate(0, 0px);
+  opacity: 1;
+  transition: all .5s;
+
+}
+
 
 .intothejoongcheon section.section4 h3{
   width: 100%;
@@ -1208,7 +1430,7 @@ section.section4 .obj2.on {
     width: 2560px;
     height: 1400px;
     position: relative;
-    padding: 1px;
+    padding: 0.1px;
     margin: 0 auto;
     transform: translate(0,-154px);
   }

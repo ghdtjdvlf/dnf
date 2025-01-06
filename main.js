@@ -4,6 +4,66 @@ const secimg1 = document.querySelector('.secimg1')
 const h2Els = document.querySelectorAll('h2')
 const h3Els = document.querySelectorAll('h3')
 
+const sub1 = document.querySelector('.sub1')
+const sub2 = document.querySelector('.sub2')
+const sub3 = document.querySelector('.sub3')
+const sub4 = document.querySelector('.sub4')
+const sub5 = document.querySelector('.sub5')
+
+
+
+
+sub1.addEventListener('click',function(){
+  window.scrollTo({
+    top: 1700,
+    left: 0,
+  })
+})
+sub2.addEventListener('click',function(){
+  window.scrollTo({
+    top: 6824,
+    left: 0,
+  })
+})
+sub3.addEventListener('click',function(){
+  window.scrollTo({
+    top: 8257,
+    left: 0,
+  })
+})
+sub4.addEventListener('click',function(){
+  window.scrollTo({
+    top: 9649,
+    left: 0,
+  })
+})
+sub5.addEventListener('click',function(){
+  window.scrollTo({
+    top: 11062,
+    left: 0,
+  })
+})
+
+const openbtn = document.querySelector('#openbtn')
+const closebtn = document.querySelector('#closebtn')
+
+const submenu = document.querySelector('.submenu_on')
+
+
+navbtnEl.addEventListener('click',function(){
+  menuEl.classList.toggle('on')
+})
+
+openbtn.addEventListener('click',function(){
+  submenu.classList.add('on')
+  closebtn.classList.add('on')
+})
+
+closebtn.addEventListener('click',function(){
+  closebtn.classList.remove('on')
+  submenu.classList.remove('on')
+})
+
 const s4 = document.querySelector('section.section4')
 const s5 = document.querySelector('section.section5')
 const s6 = document.querySelector('section.section6')
@@ -11,6 +71,7 @@ const s7 = document.querySelector('section.section7')
 
 const s4ob1 =s4.querySelector('.obj1')
 const s4ob2 =s4.querySelector('.obj2')
+const s4up =s4.querySelector('.d0109')
 
 const s5up = s5.querySelector('.d0200')
 const preview = s5.querySelector('.preview')
@@ -37,7 +98,6 @@ const io = new IntersectionObserver(function(entries){
     } else {
       entry.target.classList.remove('on')
     }
-    
   })
 })
 
@@ -57,6 +117,7 @@ io.observe(s3obj2);
 io.observe(cardbox);
 io.observe(s4ob1);
 io.observe(s4ob2);
+io.observe(s4up);
 io.observe(s5up);
 io.observe(preview);
 io.observe(reward);
@@ -73,9 +134,6 @@ io.observe(s7c2);
 // 클릭시 close로 변경
 navbtnEl.addEventListener('click' , function(){
   navbtnEl.classList.toggle('close');
-})
-navbtnEl.addEventListener('click' , function(){
-  menuEl.classList.toggle('hide');
 })
 
 // window.addEventListener('scroll', _.throttle(function(){
@@ -559,23 +617,3 @@ rightBtn.addEventListener('click', function () {
 
 
 
-    const swiper = new Swiper('.swiper', {
-      // Optional parameters
-      loop: true,
-    
-      // If we need pagination
-      pagination: {
-        el: '.swiper-pagination',
-      },
-    
-      // Navigation arrows
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-    
-      // And if we need scrollbar
-      scrollbar: {
-        el: '.swiper-scrollbar',
-      },
-    });
